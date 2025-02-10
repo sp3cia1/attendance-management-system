@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher AMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@200;300;400;600;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+
+
+  <div class="main-container">
+
+    <h1>Teacher AMS</h1>
+
+    <div class="countdown-container">
+      <div id="countdown" class="countdown-text"></div>
+      <button id="resetAttendance" class="action-button">Reset and Start New Attendance</button>
+    </div>
+
+    <div class="otp-container">
+      <label for="otp">Enter OTP:</label>
+      <input type="text" id="setOTP" name="otp" class="otp-input" required>
+      <button type="submit" id="generateOTP" class="action-button">Generate OTP</button>
+    </div>
+
+    <div id="alert" class="alert-message"></div>
+
+    <div class="student-add-container">
+      <input type="text" id="enrollmentNumber" class="student-input" placeholder="Enrollment Number" value='E23CSEU'>
+      <button id='addId' class="action-button">Add Student</button>
+    </div>
+
+    <div class="attendance-container">
+      <div class="attendance-heading">Present Students</div>
+      <ol id="AttendanceList" class="attendance-list">
+        <!-- List items will be added here -->
+      </ol>
+    </div>
+
+    <button type="submit" id="downloadButton" class="action-button">Download Attendance CSV</button>
+
+
+  </div>
+
+
+
+  <script src="teacher.js" type="module">
+    
+  </script>
+
+</body>
+</html>

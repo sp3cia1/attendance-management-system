@@ -1,0 +1,145 @@
+
+body {
+  background-color: #f0f0f0; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+  background-color: #fff; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+}
+
+.student-input,
+.otp-input {
+  color: #c9ced8;
+  background-color: #1e1e1e;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 12px 8px;
+  font-weight: 700;
+  width: 70%; 
+  color: white;
+}
+
+.action-button {
+  color: #fff;
+  background-color: #e67e22;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.action-button:active {
+  background-color: #fff;
+  color: #e67e22;
+}
+
+.attendance-list {
+  counter-reset: list-counter; 
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap; 
+  color: #f2f2f2;
+}
+
+.attendance-list li {
+  background-color: #e67e22;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+  flex-basis: calc(33.33% - 10px);
+  margin-right: 3px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.attendance-list li::before {
+  counter-increment: list-counter; /* Increment the counter for each item */
+  content: counter(list-counter); /* Display the current counter value as the serial number */
+  margin-right: 10px; /* Add spacing between the serial number and text */
+}
+
+.attendance-list li:active {
+  background-color: #fff; 
+  color: #1abc9c; 
+}
+
+
+label[for="otp"] {
+  display: block; /* label is on a separate line */
+  margin-top: 20px; /* Add spacing above the label */
+  font-size: 18px;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.attendance-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px; /* Add spacing above the heading */
+  color: #333; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.countdown-container {
+  text-align: center;
+  margin: 20px auto; /* Center the container horizontally and add some spacing */
+  padding: 10px;
+  background-color: #f2f2f2; 
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#countdown-timer {
+  color: #e67e22; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alert-message {
+  font-size: 18px;
+  margin-top: 10px; /* Add some spacing above the alert message */
+  color: #d9534f; 
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
