@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student AMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@200;300;400;600;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <h1 class="page-title">Student AMS</h1>
+    <div class="container">
+        <form id="attendanceForm">
+
+            <div class="warning" id="warning"></div>
+            <div class="countdown" id="countdown"></div>
+            <label for="enrollmentNumber" class="input-label">Enter Enrollment Number:</label>
+            <input type="text" id="enrollmentNumber" name="enrollmentNumber" class="input-field" value="E23CSEU" required>
+            <label for="otp" class="input-label">Enter OTP:</label>
+            <input type="text" id="otp" name="otp" class="input-field">
+            <div class="alert" id="alert"></div>
+            <div class="button-container">
+                <button type="submit" class="submit-button">Mark Attendance</button>
+            </div>
+            
+            <div class="error" id="error"></div>
+        </form>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="student.js" type="module"></script>
+</body>
+</html>
